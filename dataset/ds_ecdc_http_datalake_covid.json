@@ -1,0 +1,36 @@
+{
+	"name": "ds_ecdc_http_datalake_covid",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_datalake_nihacoviddl",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Sinkfileparameter": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "raw"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().Sinkfileparameter",
+					"type": "Expression"
+				},
+				"folderPath": "ecdc",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

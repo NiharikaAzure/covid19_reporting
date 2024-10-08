@@ -1,0 +1,9 @@
+{
+	"name": "V-Niha-covid-reporting-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "49f29038-c9f0-474b-a6eb-8e8e52d5b82f",
+		"tenantId": "adb08cb1-3a23-4cc4-ac35-1125dd2c812c"
+	}
+}
