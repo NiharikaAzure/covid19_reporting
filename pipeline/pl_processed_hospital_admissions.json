@@ -27,6 +27,9 @@
 				}
 			}
 		],
+		"folder": {
+			"name": "process"
+		},
 		"annotations": [],
 		"lastPublishTime": "2024-10-08T05:08:06Z"
 	},
